@@ -1,4 +1,4 @@
-version: "4"
+version: '4'
 services:
   mysql:
     image: mysql:8.3.0
@@ -8,5 +8,5 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: mysql
     volumes:
-      - ./mysql/init.sql/docker-entrypoint-initdb.d/init.sql
       - ./docker/mysql/data:/var/lib/mysql
+      - ./docker/mysql/init.sql:/docker-entrypoint-initdb.d/init.sql

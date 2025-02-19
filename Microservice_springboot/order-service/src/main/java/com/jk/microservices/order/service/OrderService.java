@@ -12,7 +12,7 @@ import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
-public class OrderService {
+public class  OrderService {
 
     @Autowired
     private final OrderRepository orderRepository;
