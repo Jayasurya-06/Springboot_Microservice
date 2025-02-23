@@ -1,6 +1,6 @@
 package com.jk.microservices.notification.service;
 
-import com.jk.microservices.notification.order.OrderPlacedEvent;
+import com.jk.microservices.order.event.OrderPlacedEvent;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
@@ -33,7 +33,7 @@ public class NotificationService {
                             Hi %s,%s
 
                             Your order with order number %s is now placed successfully.
-                            
+
                             Best Regards
                             Spring Shop
                             """,

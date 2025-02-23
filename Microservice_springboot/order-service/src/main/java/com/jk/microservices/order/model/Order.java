@@ -21,5 +21,5 @@ public class Order {
     private String orderNumber;
     private String skuCode;
     private BigDecimal price;
-    private Integer quality;
+    private Integer quantity;
 }

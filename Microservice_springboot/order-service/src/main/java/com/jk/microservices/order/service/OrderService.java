@@ -34,7 +34,7 @@ public class  OrderService {
             order.setOrderNumber(UUID.randomUUID().toString());
             order.setPrice(orderRequest.price());
             order.setSkuCode(orderRequest.skuCode());
-            order.setQuality(orderRequest.quantity());
+            order.setQuantity(orderRequest.quantity());
             orderRepository.save(order);
 
             // send message to kafka topic
